@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
 # Properties
 ifneq ($(TARGET_USE_QTI_BT_STACK),false)
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.vendor.bt.a2dp.aac_whitelist=false \
     ro.bluetooth.library_name=libbluetooth_qti.so
 endif
 
