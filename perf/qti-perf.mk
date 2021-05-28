@@ -49,6 +49,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
     vendor.power.pasr.enabled=true
 
+#PASR HAL and APP
+PRODUCT_PACKAGES += \
+    vendor.qti.power.pasrmanager@1.0-service \
+    vendor.qti.power.pasrmanager@1.0-impl \
+    pasrservice
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.perf.scroll_opt=true
 
