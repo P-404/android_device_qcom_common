@@ -20,12 +20,10 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     display \
     gps \
-    init \
     nq-nfc \
     overlay \
     perf \
     telephony \
-    usb \
     vibrator \
     wfd \
     wlan
@@ -39,19 +37,15 @@ endif
 
 # QTI Common Components
 ifneq (,$(filter av, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/av/qti-av.mk
+include $(DEVICE_PATH)/system/av/qti-av.mk
 endif
 
 ifneq (,$(filter bt, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/bt/qti-bt.mk
+include $(DEVICE_PATH)/system/bt/qti-bt.mk
 endif
 
 ifneq (,$(filter gps, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/gps/qti-gps.mk
-endif
-
-ifneq (,$(filter init, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/init/qti-init.mk
+include $(DEVICE_PATH)/system/gps/qti-gps.mk
 endif
 
 ifneq (,$(filter overlay, $(TARGET_COMMON_QTI_COMPONENTS)))
@@ -59,57 +53,55 @@ include $(DEVICE_PATH)/overlay/qti-overlay.mk
 endif
 
 ifneq (,$(filter perf, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/perf/qti-perf.mk
+include $(DEVICE_PATH)/system/perf/qti-perf.mk
+include $(DEVICE_PATH)/vendor/perf/qti-perf.mk
 endif
 
 ifneq (,$(filter telephony, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/telephony/qti-telephony.mk
-endif
-
-ifneq (,$(filter usb, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/usb/qti-usb.mk
+include $(DEVICE_PATH)/system/telephony/qti-telephony.mk
 endif
 
 ifneq (,$(filter vibrator, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/vibrator/qti-vibrator.mk
+include $(DEVICE_PATH)/vendor/vibrator/qti-vibrator.mk
 endif
 
 # >= SM8350
 ifneq (,$(filter media, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/media/qti-media.mk
+include $(DEVICE_PATH)/vendor/media/qti-media.mk
 endif
 
 # <= SM8250
 ifneq (,$(filter media-legacy, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/media-legacy/qti-media-legacy.mk
+include $(DEVICE_PATH)/vendor/media-legacy/qti-media-legacy.mk
 endif
 
 # >= SDM845
 ifneq (,$(filter adreno, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/adreno/qti-adreno.mk
+include $(DEVICE_PATH)/vendor/adreno/qti-adreno.mk
 endif
 
 ifneq (,$(filter audio, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/audio/qti-audio.mk
+include $(DEVICE_PATH)/system/audio/qti-audio.mk
 endif
 
 ifneq (,$(filter display, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/display/qti-display.mk
+include $(DEVICE_PATH)/system/display/qti-display.mk
 endif
 
 ifneq (,$(filter nq-nfc, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/nq-nfc/qti-nq-nfc.mk
+include $(DEVICE_PATH)/vendor/nq-nfc/qti-nq-nfc.mk
 endif
 
 ifneq (,$(filter wfd, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/wfd/qti-wfd.mk
+include $(DEVICE_PATH)/system/wfd/qti-wfd.mk
 endif
 
 ifneq (,$(filter wlan, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/wlan/qti-wlan.mk
+include $(DEVICE_PATH)/system/wlan/qti-wlan.mk
+include $(DEVICE_PATH)/vendor/wlan/qti-wlan.mk
 endif
 
 # <= MSM8998
 ifneq (,$(filter wfd-legacy, $(TARGET_COMMON_QTI_COMPONENTS)))
-include $(DEVICE_PATH)/wfd-legacy/qti-wfd-legacy.mk
+include $(DEVICE_PATH)/system/wfd-legacy/qti-wfd-legacy.mk
 endif
