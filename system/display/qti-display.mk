@@ -27,4 +27,4 @@ include vendor/qcom/opensource/commonsys/display/config/display-product-commonsy
 endif
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/qcom/common/display/system/display-vendor.mk)
+$(call inherit-product-if-exists, vendor/qcom/common/system/display/display-vendor.mk)
