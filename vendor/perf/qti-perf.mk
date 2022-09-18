@@ -1,4 +1,5 @@
 # Copyright (C) 2022 Paranoid Android
+# Copyright (C) 2022 Project 404
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -35,7 +36,7 @@ endif
 # Packages
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor \
-    init.aospa.perf.rc \
+    init.p404.perf.rc \
     libavservices_minijail.vendor \
     libpsi.vendor \
     libtflite \

@@ -1,4 +1,5 @@
 # Copyright (C) 2022 Paranoid Android
+# Copyright (C) 2022 Project 404
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -31,4 +32,4 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml
 
 PRODUCT_PACKAGES += \
-    init.aospa.usb.rc
+    init.p404.usb.rc
