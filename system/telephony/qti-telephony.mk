@@ -23,6 +23,33 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.1 \
     libjson
 
+# Telephony - AOSP
+PRODUCT_PACKAGES += \
+    Stk
+
+# Telephony - CLO
+PRODUCT_PACKAGES += \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml \
+    ims-ext-common \
+    ims_ext_common.xml \
+    tcmiface \
+    telephony-ext \
+    qti-telephony-hidl-wrapper \
+    qti-telephony-hidl-wrapper-prd \
+    qti_telephony_hidl_wrapper.xml \
+    qti_telephony_hidl_wrapper_prd.xml \
+    qti-telephony-utils \
+    qti-telephony-utils-prd \
+    qti_telephony_utils.xml \
+    qti_telephony_utils_prd.xml
+
+PRODUCT_BOOT_JARS += \
+    tcmiface \
+    telephony-ext
+
 # Properties
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     DEVICE_PROVISIONED=1 \
