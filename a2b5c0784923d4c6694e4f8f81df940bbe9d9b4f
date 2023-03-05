@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "96abe9db_dac039d0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-03-05T04:44:31Z",
+      "side": 1,
+      "message": "Breaks Bluetooth Audio On Beryllium",
+      "revId": "a2b5c0784923d4c6694e4f8f81df940bbe9d9b4f",
+      "serverId": "c85314f7-38ff-4b73-93db-2637f3516207"
+    }
+  ]
+}
