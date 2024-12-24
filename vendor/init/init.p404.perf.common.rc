@@ -131,4 +131,4 @@ on property:vendor.post_boot.parsed=1
 
 # Dynamically set IRQ affinity for KGSL and DRM/MDSS
 on property:vendor.post_boot.parsed=1
-    exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.aospa.perf.common.sh
+    exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.p404.perf.common.sh

@@ -16,8 +16,8 @@ soong_namespace {
 }
 
 prebuilt_etc {
-    name: "init.aospa.perf.common.rc",
-    src: "init.aospa.perf.common.rc",
+    name: "init.p404.perf.common.rc",
+    src: "init.p404.perf.common.rc",
     sub_dir: "init",
     vendor: true,
 }
@@ -37,8 +37,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.qcom.aospa.rc",
-    src: "init.qcom.aospa.rc",
+    name: "init.qcom.p404.rc",
+    src: "init.qcom.p404.rc",
     sub_dir: "init",
     vendor: true,
 }
@@ -72,8 +72,8 @@ prebuilt_hidl_interfaces {
 }
 
 sh_binary {
-    name: "init.aospa.perf.common.sh",
-    src: "init.aospa.perf.common.sh",
+    name: "init.p404.perf.common.sh",
+    src: "init.p404.perf.common.sh",
     vendor: true,
 }
 

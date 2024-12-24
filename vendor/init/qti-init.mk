@@ -31,9 +31,9 @@ endif
 
 # Init
 PRODUCT_PACKAGES += \
-    init.aospa.perf.common.rc \
-    init.aospa.perf.common.sh \
-    init.qcom.aospa.rc \
+    init.p404.perf.common.rc \
+    init.p404.perf.common.sh \
+    init.qcom.p404.rc \
     init.class_main.sh \
     init.crda.sh \
     init.mdm.sh \

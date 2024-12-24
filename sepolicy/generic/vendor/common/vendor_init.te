@@ -1,4 +1,4 @@
-# Allow init.aospa.perf.rc to read CPUSets
+# Allow init.p404.perf.rc to read CPUSets
 allow vendor_init cgroup:file r_file_perms;
 
 # Allow build.prop to set vendor.all.modules.ready
